@@ -1,28 +1,84 @@
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#home {
+  position: relative;
   width: 100%;
-  background: #fff;
-  padding-top: 82px;
-  padding-bottom: 10px;
+  padding-top: 8.8rem;
+  padding-bottom: 6rem;
+  overflow: hidden;
 }
 
-#hero h1 {
-  margin: 0;
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/amalfi-background.JPG) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  animation: blurAnimation 1.2s ease-in-out 1s forwards;
+}
+
+@keyframes blurAnimation {
+  0% {
+    filter: blur(0) brightness(1);
+  }
+  100% {
+    filter: blur(3px) brightness(0.7);
+  }
+}
+
+#home h1 {
+  margin: 2%;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #3e4450;
+  margin: 10px 0 10px 0;
+  color: rgb(273, 179, 119);
+  font-family: 'Palanquin Dark', sans-serif;
+  text-shadow: 0 28px 28px rgba(0, 0, 0, 0.9);
 }
 
-#hero h2 {
-  color: #858ea1;
-  margin: 10px 0 30px 0;
+#home h2 {
+  color: white;
+  margin: 10px 0 10px 0;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 36px;
+  font-weight: 580;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 1);
+}
+
+#home h3 {
+  color: white;
+  margin: 10px 0 10px 0;
+  font-family: 'Palanquin Dark', sans-serif;
   font-size: 24px;
+  font-weight: 100;
+  text-shadow: 0 8px 8px rgba(0, 0, 0, 1);
 }
 
-#hero .btn-get-started {
+#home img {
+  margin: 2% 0 1% 0;
+}
+
+#home a {
+    white-space: nowrap;
+    transition: 0.3s;
+    color: white;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(273, 179, 119);
+}
+
+#home a:hover {
+  text-shadow: 6px 3px 3px rgba(255, 255, 255, 0.6);
+}
+
+#home .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -36,12 +92,12 @@
   box-shadow: 0 8px 28px rgba(90, 155, 228, 0.45)
 }
 
-#hero .btn-get-started:hover {
+#home .btn-get-started:hover {
   background: #206bfb;
   box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
 }
 
-#hero .btn-watch-video {
+#home .btn-watch-video {
   font-size: 16px;
   display: inline-block;
   transition: 0.5s;
@@ -52,69 +108,19 @@
   justify-content: center;
 }
 
-#hero .btn-watch-video i {
+#home .btn-watch-video i {
   color: #949cac;
   font-size: 32px;
   line-height: 0;
   margin-right: 8px;
 }
 
-#hero .btn-watch-video:hover i {
+#home .btn-watch-video:hover i {
   color: #3B8BCE;;
 }
 
-#hero .animated {
+#home .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
-.flipper{
-  width: 360px;
-  height: 500px;
-  background: none;
-}
-
-.thecard{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
-  cursor: pointer;
-}
-
-@media (min-width: 992px) {
-    .thefront img {
-        position: absolute;
-        top: 10%;
-        max-width: 100%;
-    }
-
-    .theback img {
-        position: absolute;
-        top: 10%;
-        max-width: 100%;
-    }
-}
-
-.thecard:hover{
-  transform: rotateY(180deg);
-}
-
- .thefront{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  overflow: hidden;
-}
-
-.theback{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  overflow: hidden;
-  transform: rotateY(180deg);
 }
 
 #buttons-div {
@@ -147,44 +153,41 @@
 }
 
 @media (max-width: 991px) {
-  #hero {
+  #home {
     height: 100vh;
   }
 
-  #hero .animated {
+  #home .animated {
     animation: none;
   }
 
-  #hero .hero-img {
+  #home .home-img {
     text-align: center;
   }
 
-  #hero .hero-img img {
+  #home .home-img img {
     width: 50%;
   }
-  .flipper{
-    width: 700px;
-    height: 360px;
   }
 }
 
 @media (max-width: 768px) {
-  #hero {
+  #home {
     height: auto;
   }
 
-  #hero h1 {
+  #home h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
-  #hero .hero-img img {
+  #home .home-img img {
     width: 70%;
   }
 
@@ -195,35 +198,16 @@
 }
 
 @media (max-width: 575px) {
-  #hero .hero-img img {
+  #home .home-img img {
     width: 80%;
   }
-  .flipper{
-    width: 110%;
-    height: 16rem;
-  }
-
     #buttons-div {
         padding: 1% 25% 5% 13%;
     }
 }
 
 @media (max-width: 445px) {
-  #hero .hero-img img {
+  #home .home-img img {
     width: 60%;
-  }
-  .flipper{
-    width: 110%;
-    height: 16rem;
-  }
-}
-
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(-10px);
   }
 }

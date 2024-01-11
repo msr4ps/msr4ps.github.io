@@ -3,6 +3,9 @@
 .navbar {
   padding: 0;
 }
+#navbar-container {
+  max-width: 90%;
+}
 
 .navbar ul {
   margin: 0;
@@ -22,10 +25,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #6a7489;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(9, 18, 60);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -37,11 +40,17 @@
   margin-left: 5px;
 }
 
+.navbar li i {
+  font-size: 20px;
+  margin-right: 0.3rem;
+}
+
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #3B8BCE;;
+  color: rgb(273, 179, 119);
+  transform: scale(1.08);
 }
 
 .navbar .getstarted,
@@ -97,7 +106,7 @@
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #3B8BCE;;
+  color: #6A2E35;
 }
 
 .navbar .dropdown:hover>ul {

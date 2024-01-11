@@ -5,12 +5,12 @@ body {
 }
 
 a {
-  color: #3B8BCE;;
+  color: #2E2836;
   text-decoration: none;
 }
 
 a:hover {
-  color: #206bfb;
+  color: rgb(60, 93, 165);
   text-decoration: none;
 }
 
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
 }
 
 /*----------------------- HEADER -----------------------*/
@@ -46,7 +46,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #5f687b;
+  color: rgb(9, 18, 60);
 }
 
 #header .logo img {
