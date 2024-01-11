@@ -1,0 +1,229 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  background: #fff;
+  padding-top: 82px;
+  padding-bottom: 10px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #3e4450;
+}
+
+#hero h2 {
+  color: #858ea1;
+  margin: 10px 0 30px 0;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #3B8BCE;
+  box-shadow: 0 8px 28px rgba(90, 155, 228, 0.45)
+}
+
+#hero .btn-get-started:hover {
+  background: #206bfb;
+  box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
+}
+
+#hero .btn-watch-video {
+  font-size: 16px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #5f687b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .btn-watch-video i {
+  color: #949cac;
+  font-size: 32px;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#hero .btn-watch-video:hover i {
+  color: #3B8BCE;;
+}
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.flipper{
+  width: 360px;
+  height: 500px;
+  background: none;
+}
+
+.thecard{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .thefront img {
+        position: absolute;
+        top: 10%;
+        max-width: 100%;
+    }
+
+    .theback img {
+        position: absolute;
+        top: 10%;
+        max-width: 100%;
+    }
+}
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+ .thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transform: rotateY(180deg);
+}
+
+#buttons-div {
+    padding: 1% 25% 5% 25%;
+    margin: 0% 0% 5% 0%;
+    height: 10%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    margin: 0% 2% 0% 2%;
+    display: inline-block;
+    padding: 6px 13px 8px 13px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #636363;
+    background: #f9f9fa;
+}
+
+.header-button:hover {
+    color: #fff;
+    background: #3B8BCE;;
+}
+
+.header-button i{
+    font-size: 24px;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero .animated {
+    animation: none;
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+  .flipper{
+    width: 700px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+
+    .flipper{
+      width: 510px;
+      height: 380px;
+    }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+  .flipper{
+    width: 110%;
+    height: 16rem;
+  }
+
+    #buttons-div {
+        padding: 1% 25% 5% 13%;
+    }
+}
+
+@media (max-width: 445px) {
+  #hero .hero-img img {
+    width: 60%;
+  }
+  .flipper{
+    width: 110%;
+    height: 16rem;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
