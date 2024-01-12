@@ -165,11 +165,12 @@
     text-align: center;
   }
 
-  #home .home-img img {
-    width: 50%;
-  }
+  #home img {
+    margin-top: 1%;
+    width: 40%;
   }
 }
+
 
 @media (max-width: 768px) {
   #home {
@@ -177,14 +178,19 @@
   }
 
   #home h1 {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 36px;
   }
 
   #home h2 {
-    font-size: 18px;
+    font-size: 26px;
     line-height: 24px;
     margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #home h3 {
+    font-size: 20px;
   }
 
   #home .home-img img {
@@ -201,9 +207,12 @@
   #home .home-img img {
     width: 80%;
   }
-    #buttons-div {
-        padding: 1% 25% 5% 13%;
-    }
+  #buttons-div {
+      padding: 1% 25% 5% 13%;
+  }
+  #home img {
+    width: 60%;
+  }
 }
 
 @media (max-width: 445px) {
