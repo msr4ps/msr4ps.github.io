@@ -17,7 +17,7 @@ table a:hover {
 }
 
   table {
-    width: 100%;
+    width: 120%;
     border-collapse: collapse;
     margin: 20px 0;
     border: 2px solid grey;
@@ -36,6 +36,29 @@ table a:hover {
       font-weight: 600;
   }
 
+  #keynote_pic {
+  height: 100px;
+  border-radius: 50%;
+  }
+
+  #keynote_title {
+  display: flex;
+  flex-direction: row;
+  }
+
+  #keynote_name {
+  padding-top: 3%;
+  margin-left: 2%;
+  }
+
+  p {
+  font-weight: 500;
+  font-size: 13px;
+  background-color: #f3f4f6;
+  padding: 1%;
+  margin-bottom: 0%;
+  }
+
 
   th {
     background-color: #f3f4f6;
@@ -43,13 +66,13 @@ table a:hover {
   }
 
     .col-date {
-      width: 30%;
+      width: 20%;
     }
     .col-time {
-      width: 25%;
+      width: 15%;
     }
     .col-event {
-      width: 45%;
+      width: 65%;
     }
 
     .btn-publication {
