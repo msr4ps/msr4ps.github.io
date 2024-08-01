@@ -1,2 +1,2 @@
-# secute-ws.github.io
-Website of SECUTE Workshop
+# msr4ps.github.io
+Website of MSR4P&S Workshop
