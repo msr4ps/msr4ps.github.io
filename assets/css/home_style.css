@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../img/amalfi-background.JPG) no-repeat center center;
+  background: url(../img/msr4ps/background.JPG) no-repeat center center;
   background-size: cover;
   z-index: -1;
   animation: blurAnimation 1.2s ease-in-out 1s forwards;
