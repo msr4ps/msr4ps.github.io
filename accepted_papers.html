@@ -76,70 +76,60 @@
 
             <!----Paper 1---->
             <div class="align-items-center publication" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                <h4>LLM Security Guard for Code</h4>
-                <p><i>Arya Kavian, Mohammad Mehdi Pourhashem Kallehbasti, Sajjad Kazemi, Ehsan Firouzi, Mohammad Ghafari</i></u></p>
+                <h4>Usability of Static Application Security Testing Workflows</h4>
+                <p><i>Bhagya Chembakottu and Martin P. Robillard</i></u></p>
                 <button class="btn btn-publication btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_0" aria-expanded="false" aria-controls="collapse_4">
                     Abstract
                 </button>
-                <div class="collapse abstract" id="collapse_0">
-                    Many developers rely on Large Language Models (LLMs) to facilitate software development. Nevertheless, these models have
-                    exhibited limited capabilities in the security domain. We introduce LLMGuard, an open-source framework that offers enhanced code security through the synergy
-                    between static code security analyzers and LLMs. Particularly, it equips practitioners with code solutions that are more secure than the code initially generated
-                    by LLMs. It also regularly benchmarks LLMs, providing valuable insights into the evolving security properties of these models.
+                <div class="collapse abstract" id="collapse_0"> The usability of static application security testing tools (SASTs) can facilitate the development of secure code within GitHub workflows. We report on our experience applying these tools with Spring and Django web development frameworks, analyzing aspects such as setup complexity, build integration, and the
+utility of the generated vulnerability reports. A key observation is that Django projects require less effort to integrate, whereas Spring projects involve significant setup challenges, particularly with SonarCloud, due to build environment dependencies. Furthermore, we observed usability issues such as ambiguous error messages and inconsistent warnings. By examining setup time
+and error incidence, we provide insights for improving SAST usability and recommendations for easier installation and clearer notifications.
                 </div>
             </div>
 
             <!----Paper 2---->
             <div class="align-items-center publication" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-                <h4>Security Risk Assessment on Cloud: A Systematic Mapping Study</h4>
-                <p><i>Giusy Annunziata, Alexandra Sheykina, Gemma Catolino, Fabio Palomba, Andrea De Lucia, Filomena Ferrucci</i></u></p>
+                <h4>Malicious and Unintentional Disclosure Risks in Large Language Models for Code Generation</h4>
+                <p><i>Rafiqul Rabin, Sean McGregor and Nick Judd</i></u></p>
                 <button class="btn btn-publication btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="false" aria-controls="collapse_4">
                     Abstract
                 </button>
-                <div class="collapse abstract" id="collapse_1">
-                    Cloud computing has become integral to modern organizational operations, offering efficiency and agility. However, security challenges such as data
-                    loss and downtime necessitate tailored compliance solutions. Risk assessment is crucial for identifying and mitigating cloud-related threats, yet a
-                    standardized approach remains elusive. Our study aims to fill this gap by conducting a mapping study on the prevailing methodologies. Through a meticulous
-                    analysis of 21 scholarly papers, we explore various aspects of security risk assessment for the cloud. The results provide valuable insights into delivery
-                    models, standards, and validation practices, contributing to a comprehensive understanding of cloud risk assessment.
+                <div class="collapse abstract" id="collapse_1"> This paper explores the risk that a large language model (LLM) trained for code generation on data mined from software repositories will generate content that discloses sensitive information included in its training data. We decompose this risk, known in the literature as ``unintended memorization,'' into two components: unintentional disclosure (where an LLM presents secrets to users without the user seeking them out) and malicious disclosure (where an LLM presents secrets to an attacker equipped with partial knowledge of the training data). We observe that while existing work mostly anticipates malicious disclosure, unintentional disclosure is also a concern. Next, we describe methods to assess unintentional and malicious disclosure risks side-by-side across different releases of training datasets and models. We demonstrate these methods through an independent assessment of the Open Language Model (OLMo) family of models and its Dolma training datasets. Our results show, first, that changes in data source and processing are associated with substantial changes in unintended memorization risk; second, that the same set of operational changes may increase one risk while mitigating another; and, third, that the risk of disclosing sensitive information varies not only by prompt strategies or test datasets but also by the relevant types of sensitive information. These contributions rely on data mining to enable greater privacy and security testing required for the LLM training data supply chain.
                 </div>
             </div>
 
             <!----Paper 3---->
             <div class="align-items-center publication" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
-                <h4>Semgrep*: Improving the Limited Performance of Static Application Security Testing (SAST) Tools</h4>
-                <p><i>Gareth Bennett, Tracy Hall, Emily Winter, Steve Counsell</i></u></p>
+                <h4>Impact of Identifier Normalization on Vulnerability Detection Techniques</h4>
+                <p><i>Torge Hinrichs, Tim Diercks and Riccardo Scandariato</i></u></p>
                 <button class="btn btn-publication btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_4">
                     Abstract
                 </button>
-                <div class="collapse abstract" id="collapse_2">
-                    Vulnerabilities in code should be detected and patched quickly to reduce the time in which they can be exploited. There are many automated approaches
-                    to assist developers in detecting vulnerabilities, most notably Static Application Security Testing (SAST) tools. However, no single tool detects all
-                    vulnerabilities and so relying on any one tool may leave vulnerabilities dormant in code. In this study, we use a manually curated dataset to evaluate
-                    four SAST tools on production code with known vulnerabilities. Our results show that the vulnerability detection rates of individual tools range from 11.2%
-                    to 26.5%, but combining these four tools can detect 38.8% of vulnerabilities. We investigate why SAST tools are unable to detect 61.2% of vulnerabilities and
-                    identify missing vulnerable code patterns from tool rule sets. Based on our findings, we create new rules for Semgrep, a popular configurable SAST tool. Our
-                    newly configured Semgrep tool detects 44.7% of vulnerabilities, more than using a combination of tools, and a 181% improvement in Semgrep’s detection rate.
+                <div class="collapse abstract" id="collapse_2"> This study examines the impact of identifier normalization on software vulnerability detection using three approaches: static analysis tools, specialized Machine Learning (ML) models, and Large Language Models (LLM). Using the BigVul dataset of vulnerabilities in C/C++ projects, the research evaluates the performance of these methods under normalized (generalized variables / functions names) and their original conditions. Static analysis tools such as Flawfinder and CppCheck exhibit limited effectiveness (F1 scores ~0.1) and are unaffected by normalization. Specialized ML models, such as LineVul, achieve high F1 scores on nonnormalized data (F1 ~ 0.9) but suffer significant performance drops when tested on normalized inputs, highlighting their lack of generalizability. In contrast, LLMs such as Llama3, although underperforming in their pre-trained state, show substantial improvement after fine-tuning, achieving robust and consistent results across both normalized and non-normalized datasets. The findings suggest that while static analysis tools are less effective, fine-tuned LLMs hold strong potential for scalable and generalized vulnerability detection. The study recommends further exploration of hybrid approaches that combine ML models, LLMs, and traditional tools to enhance accuracy and adaptability in diverse scenarios.
                 </div>
             </div>
 
             <!----Paper 4---->
             <div class="align-items-center publication" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-                <h4>Toward a Search-Based Approach to Support the Design of Security Tests for Malicious Network Traffic</h4>
-                <p><i>Davide La Gamba, Gerardo Iuliano, Gilberto Recupito, Giammaria Giordano, Filomena Ferrucci, Dario Di Nucci, Fabio Palomba</i></u></p>
+                <h4>Impact of Software Bill of Material Generation Tools and Formats on Compliance with US Government Standards</h4>
+                <p><i>Redempta Manzi Muneza, Aidan Keefe, Eric O'Donoghue and Ann Marie Reinhold</i></u></p>
                 <button class="btn btn-publication btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_4">
                     Abstract
                 </button>
-                <div class="collapse abstract" id="collapse_3">
-                    IoT devices generate and exchange large amounts of data daily, creating significant security and privacy challenges. Security testing, particularly
-                    using Machine Learning (ML), helps identify and classify potential malicious network traffic. Previous research has shown how ML can aid in designing
-                    security tests for IoT attacks. This ongoing paper introduces a search-based approach using Genetic Algorithms (GAs) to evolve detection rules and detect
-                    intrusion attacks. We build on existing GA methods for intrusion detection and compare them with leading ML models. We propose 17 detection rules and
-                    demonstrate that while GAs do not fully replace ML, they perform well with ample attack examples and enhance the usability and implementation of deterministic
-                    test cases by security testers.
+                <div class="collapse abstract" id="collapse_3"> Software Bills of Materials (SBOMs) provide transparency in the software supply chain (SSC), allowing organizations to assess and manage software security risks. To enhance the security of the SSC, the National Telecommunications and Information Administration (NTIA), an agency under the U.S. Department of Commerce, released a set of minimum elements that an SBOM must contain for software provided to the U.S. government. Despite this requirement, the impact of SBOM generation on compliance with these minimum elements remains largely unknown. To address this concern, we conducted a systematic analysis to assess how SBOM generation tools and formats influence compliance with NTIA’s standards. We mined Docker Hub for 2,225 Docker images and generated four distinct sets of SBOMs by varying the generation tools (Trivy and Syft) and formats (CycloneDX and SPDX). We then evaluated the NTIA compliance of each SBOM using SBOMQS, an open-source SBOM quality assessment tool. We found numerous disparities exist in SBOM NTIA compliance attributed to SBOM generation; notably, compliance scores vary more according to the choice of generation tool than format. The disparities in SBOM compliance with NTIA standards, even for identical software artifacts, emphasize the critical need to refine and validate SBOM technologies to strengthen SSC security. This research informs SBOM generation from a government compliance perspective–filling a critical gap for software vendors and providing insights that help improve both privacy and security in software systems through better SBOM generation practices.
                 </div>
             </div>
 
+            <!----Paper 5---->
+            <div class="align-items-center publication" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+                <h4>Links Between Package Popularity, Criticality, and Security in Software Ecosystems</h4>
+                <p><i>Alexis Butler, Dan O'Keeffe and Santanu Kumar Dash</i></u></p>
+                <button class="btn btn-publication btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_4">
+                    Abstract
+                </button>
+                <div class="collapse abstract" id="collapse_3"> With the continued growth of Open Source Software (OSS), maintenance workloads have also continued to expand, this along with additional stressors results in maintainer burnout and churn. Given that the pool of those within a software ecosystem with the expertise and willingness to maintain a project is limited, maintenance efforts should be focussed on minimizing security risks with the greatest potential impact. One would expect a well maintained ecosystem to have strong security across all packages, or at the very least, strong security in packages that are core to the ecosystem. As such, dependency graphs for two ecosystems (Python, and JavaScript/Typescript) were captured to obtain criticality and popularity scores for each package. Security was measured at multiple points across the range of these metrics to establish the relationships between popularity, criticality and security. In doing so, a statistically significant moderate positive correlation between security and popularity for both ecosystems was found, along with inconclusive results for the correlation between security and criticality. These results can be used to assist in both, feature selection for machine learning based dependency risk measurement, and as a guide for dataset sampling for future security tooling evaluation.
+                </div>
+            </div>
         </div>
     </div>
 </section>
